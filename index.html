@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Byadgi Chilli Quality Grader</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="home">
+      <nav class="navbar container">
+        <div class="brand">🌶️ Byadgi Chilli Quality Grader</div>
+        <a href="#grader" class="nav-cta">Try AI Grader</a>
+      </nav>
+      <div class="hero-content container">
+        <div class="hero-text">
+          <p class="tag">AI + Agriculture Innovation</p>
+          <h1>AI Based Byadgi Chilli Quality Grading System</h1>
+          <p>
+            Detect and grade Byadgi chillies using Artificial Intelligence and
+            Computer Vision.
+          </p>
+          <a href="#grader" class="btn-primary">Try AI Grader</a>
+        </div>
+        <div class="hero-image-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=1000&q=80"
+            alt="Fresh red chillies"
+            class="hero-image"
+          />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section container" id="about">
+        <h2>About Byadgi Chilli</h2>
+        <p>
+          Byadgi chilli is a famous variety from Karnataka, India, known for its
+          deep red color, rich aroma, and moderate pungency. It is widely used in
+          Indian cuisine, spice powders, and food processing industries.
+        </p>
+        <p>
+          Accurate quality grading helps farmers get fair market value, supports
+          traders in maintaining standards, and improves consistency in export and
+          domestic supply chains.
+        </p>
+      </section>
+
+      <section class="section section-card" id="grader">
+        <div class="container">
+          <h2>AI Chilli Grader Tool</h2>
+          <p class="section-subtitle">
+            Upload a chilli image and run AI analysis to estimate quality grade.
+          </p>
+          <div class="grader-grid">
+            <div class="grader-panel">
+              <label for="chilliImage">Upload an image of a chilli</label>
+              <input type="file" id="chilliImage" accept="image/*" />
+              <button id="analyzeBtn" class="btn-primary">Analyze Chilli</button>
+              <div class="preview-wrap">
+                <img id="preview" alt="Uploaded chilli preview" hidden />
+              </div>
+            </div>
+            <div class="grader-panel results" id="results">
+              <h3>Prediction Results</h3>
+              <p><strong>Grade:</strong> <span id="grade">-</span></p>
+              <p><strong>Confidence:</strong> <span id="confidence">-</span></p>
+              <p><strong>Possible Defects:</strong> <span id="defects">-</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps">
+          <div class="step">Step 1 – Upload chilli image</div>
+          <div class="step">Step 2 – AI model processes image</div>
+          <div class="step">Step 3 – System predicts quality grade</div>
+        </div>
+      </section>
+
+      <section class="section container" id="technology">
+        <h2>Technology Used</h2>
+        <div class="chips">
+          <span>Python</span>
+          <span>Machine Learning</span>
+          <span>Deep Learning</span>
+          <span>Computer Vision</span>
+          <span>Image Dataset for chilli grading</span>
+        </div>
+      </section>
+
+      <section class="section section-card" id="dataset">
+        <div class="container">
+          <h2>Dataset Gallery</h2>
+          <p class="section-subtitle">
+            Sample chilli images used for model training and validation.
+          </p>
+          <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?auto=format&fit=crop&w=600&q=80" alt="Byadgi chilli sample 1" />
+            <img src="https://images.unsplash.com/photo-1588252303782-cb80119abd6d?auto=format&fit=crop&w=600&q=80" alt="Byadgi chilli sample 2" />
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80" alt="Byadgi chilli sample 3" />
+            <img src="https://images.unsplash.com/photo-1599488615732-4cf2d66a9df4?auto=format&fit=crop&w=600&q=80" alt="Byadgi chilli sample 4" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="project">
+        <h2>Project Information</h2>
+        <p>
+          This is a student research project focused on improving agricultural
+          quality grading using AI. The goal is to build practical digital tools
+          for farmers, traders, and agri-tech ecosystems.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <p>📧 Contact: byadgi.ai.project@example.com</p>
+        <p>© 2026 Byadgi Chilli Quality Grader | Student Research Initiative</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
